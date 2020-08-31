@@ -1,0 +1,25 @@
+
+.title{
+    width:100%;
+    /* background-color: tomato; */
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.info{
+    width:100%;
+    color: hsl(0, 0%, 17%);
+    font-size: 18px;
+    font-weight: 700;
+} 
+
+@media only screen and (min-width: 320px) and (max-width:880px){
+    .title{
+        text-align: center;
+    }
+    .info{
+        margin-bottom: 10px;
+    }
+}
