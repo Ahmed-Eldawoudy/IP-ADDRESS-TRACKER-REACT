@@ -12,7 +12,7 @@ function IpInfo(props) {
             </div>
             <div className='Ip-info'>
                 <p className='title'>LOCATION</p>
-                <p className='info'>{props.location}</p>
+                <p className='info'>{props.city}  {props.location}</p>
             </div>
             <div className='Ip-info'>
                 <p className='title'>TIME ZONE</p>

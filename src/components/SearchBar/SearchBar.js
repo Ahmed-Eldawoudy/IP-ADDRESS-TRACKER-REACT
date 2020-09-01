@@ -8,9 +8,9 @@ function SearchBar(props) {
                 placeholder='Search for any IP address or domain'
                 className='search'
                 onChange={props.onSearch} />
-            <div className='arrow' onClick={props.onClick}>
+            <button className='arrow' onClick={props.onClick}>
                 <img src={require('./icon-arrow.svg')} alt='' />
-            </div>
+            </button>
         </div>
     )
 }

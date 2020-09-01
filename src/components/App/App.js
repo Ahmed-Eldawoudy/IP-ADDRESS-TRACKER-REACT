@@ -19,32 +19,42 @@ function App() {
 
   useEffect(() => {
     fetch('https://geolocation-db.com/json/7733a990-ebd4-11ea-b9a6-2955706ddbf3')
-      .then(res => res.json())
+      .then(res => {
+        if (res.ok) {
+          return res.json();
+        }
+        throw new Error('Request failed!')
+      }, networkError => console.log(networkError.message))
       .then(json => {
         setIp(json.IPv4)
-        setLat(json.latitude)
-        setLng(json.longitude)
       })
   }, [])
 
 
 
   function ipfy() {
-    const data = fetch(`https://geo.ipify.org/api/v1?apiKey=at_neIMwcRQ5BZdbXcWbAluuZpwZHwV6&ipAddress=${ip}`)
+    const data = fetch(`https://geo.ipify.org/api/v1?apiKey=at_ufBBaLzco7Wwjkf7euZvBf6osvxrR&ipAddress=${ip}`)
       .then(response => {
-        return response.json()
-      }).then(jsonResponse => {
+        if (response.ok) {
+          return response.json()
+        }
+        throw new Error('Request failed! Note: You must enter a valid IP address for more info please visit (https://docs.oracle.com/cd/E19504-01/802-5753/planning3-18471/index.html)')
+      }, networkError => console.log(networkError.message))
+      .then(jsonResponse => {
         return jsonResponse
       })
     return data
   }
 
- async function locationInfo() {
-    await ipfy().then(data => setData({ ...data }))
+  async function locationInfo() {
+    await ipfy().then(data => {
+      setData({ ...data })
+      setLat(data.location.lat)
+      setLng(data.location.lng)
+    })
   }
 
   const location = { ...data.location };
-  console.log(location)
 
 
 
@@ -58,9 +68,9 @@ function App() {
       </header>
       <main>
         <section className='ip-info'>
-          <IpInfo ip={data.ip} location={location.region} timezone={location.timezone} isp={data.isp} />
+          <IpInfo ip={data.ip} location={location.region} city={location.city} timezone={location.timezone} isp={data.isp} />
         </section>
-        <section className='map'><MapLeaflet lat={lat} lng={lng}/></section>
+        <section className='map'><MapLeaflet lat={lat} lng={lng} /></section>
       </main>
     </div>
   );
