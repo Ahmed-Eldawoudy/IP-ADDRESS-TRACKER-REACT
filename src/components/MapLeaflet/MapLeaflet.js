@@ -4,10 +4,10 @@ import L from "leaflet";
 import 'leaflet/dist/leaflet.css'
 import './MapLeaflet.css'
 
-function MapLeaflet() {
+function MapLeaflet(props) {
     const state = {
-        lat: 51.505,
-        lng: -0.09,
+        lat: props.lat,
+        lng: props.lng,
         zoom: 13
     }
     const position = [state.lat, state.lng]
