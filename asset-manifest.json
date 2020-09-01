@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/css/main.5cd8e28d.chunk.css",
+    "main.js": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/main.6a3d9441.chunk.js",
+    "main.js.map": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/main.6a3d9441.chunk.js.map",
+    "runtime-main.js": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/runtime-main.2bc6e94f.js",
+    "runtime-main.js.map": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/runtime-main.2bc6e94f.js.map",
+    "static/css/2.067ccc96.chunk.css": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/css/2.067ccc96.chunk.css",
+    "static/js/2.2a2c10dd.chunk.js": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/2.2a2c10dd.chunk.js",
+    "static/js/2.2a2c10dd.chunk.js.map": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/2.2a2c10dd.chunk.js.map",
+    "index.html": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/index.html",
+    "precache-manifest.9f8da31bb4dfbec8854be47e3501920e.js": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/precache-manifest.9f8da31bb4dfbec8854be47e3501920e.js",
+    "service-worker.js": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/service-worker.js",
+    "static/css/2.067ccc96.chunk.css.map": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/css/2.067ccc96.chunk.css.map",
+    "static/css/main.5cd8e28d.chunk.css.map": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/css/main.5cd8e28d.chunk.css.map",
+    "static/js/2.2a2c10dd.chunk.js.LICENSE.txt": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/js/2.2a2c10dd.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow.svg": "/Ahmed-Eldawoody/IP-ADDRESS-TRACKER.git/static/media/icon-arrow.53ef8ed8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2bc6e94f.js",
+    "static/css/2.067ccc96.chunk.css",
+    "static/js/2.2a2c10dd.chunk.js",
+    "static/css/main.5cd8e28d.chunk.css",
+    "static/js/main.6a3d9441.chunk.js"
+  ]
+}
